@@ -16,6 +16,9 @@ app.use(logger);
 app.use(routes);
 app.use(routes2);
 
+app.get('/badmethod',(req,res)=>{
+  throw new Error('Error');
+})
 const start = (port) => {
   app.listen(port, () => {
     console.log(`The server start running at port ${port}`);
