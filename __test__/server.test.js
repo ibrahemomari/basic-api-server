@@ -20,25 +20,25 @@ describe("API food Server", () => {
     expect(response.status).toEqual(200);
   });
 
-  // // food post
-  // it("food post test", async () => {
-  //   const response = await request.post(`/food`).send(obj);
-  //   id=response.body.id;
-  //   console.log(response.body);
-  //   expect(response.status).toEqual(200);
-  // });
+  // food post
+  it("food post test", async () => {
+    const response = await request.post(`/food`).send(obj);
+    id=response.body.id;
+    console.log(response.body);
+    expect(response.status).toEqual(200);
+  });
 
-  // // food update 
-  // it("food update test", async () => {
-  //   const response = await request.put(`/food/${id}`).send(obj);
-  //   expect(response.status).toEqual(200);
-  // });
+  // food update 
+  it("food update test", async () => {
+    const response = await request.put(`/food/${id}`).send(obj);
+    expect(response.status).toEqual(200);
+  });
 
-  //  // food delete 
-  //  it("food delete test", async () => {
-  //   const response = await request.delete(`/food/${id}`);
-  //   expect(response.status).toEqual(204);
-  // });
+   // food delete 
+   it("food delete test", async () => {
+    const response = await request.delete(`/food/${id}`);
+    expect(response.status).toEqual(204);
+  });
   });
 
 });
@@ -86,23 +86,23 @@ it("food get test", async () => {
   expect(response.status).toEqual(200);
 });
 
-// // clothes post
-// it("food post test", async () => {
-//   const response = await request.post(`/clothes`).send(obj);
-//   id=response.body.id;
-//   console.log(response.body);
-//   expect(response.status).toEqual(200);
-// });
+// clothes post
+it("food post test", async () => {
+  const response = await request.post(`/clothes`).send(obj);
+  id=response.body.id;
+  console.log(response.body);
+  expect(response.status).toEqual(200);
+});
 
-// // clothes update 
-// it("food update test", async () => {
-//   const response = await request.put(`/clothes/${id}`).send(obj);
-//   expect(response.status).toEqual(200);
-// });
+// clothes update 
+it("food update test", async () => {
+  const response = await request.put(`/clothes/${id}`).send(obj);
+  expect(response.status).toEqual(200);
+});
 
-//  // clothes delete 
-//  it("food delete test", async () => {
-//   const response = await request.delete(`/clothes/${id}`);
-//   expect(response.status).toEqual(204);
-// });
+ // clothes delete 
+ it("food delete test", async () => {
+  const response = await request.delete(`/clothes/${id}`);
+  expect(response.status).toEqual(204);
+});
 })});
